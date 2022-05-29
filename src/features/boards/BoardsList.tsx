@@ -10,7 +10,7 @@ const BoardsList: React.FC = () => {
   const { isAddMode, handleEnterAddMode, handleExitAddMode } = useAddMode();
 
   return (
-    <div className="overflow-x-auto flex gap-2">
+    <div className="overflow-x-auto h-screen flex gap-2">
       {boards.map((board) => (
         <BoardItem key={board.title} board={board} />
       ))}

@@ -25,7 +25,7 @@ const AddBoard: React.FC<AddBoardProps> = ({ onCancel }) => {
   };
 
   const handleAddBoard = () => {
-    if (!boardTitle) {
+    if (!boardTitle.trim()) {
       handleCancel();
 
       return;

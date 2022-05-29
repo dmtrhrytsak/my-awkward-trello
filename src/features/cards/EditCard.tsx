@@ -25,6 +25,12 @@ const EditCard: React.FC<EditCardProps> = ({ boardId, card, onExit }) => {
   };
 
   const handleEditCard = () => {
+    if (!newTitle.trim()) {
+      onExit();
+
+      return;
+    }
+
     dispatch(
       updateCard({ boardId, cardId: card.id, attrs: { title: newTitle } })
     );

@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { CgClose } from 'react-icons/cg';
 
 import { useAppDispatch } from '../../store/hooks';
@@ -26,7 +26,7 @@ const AddCard: React.FC<AddCardProps> = ({ boardId, onCancel }) => {
   };
 
   const handleAddCard = () => {
-    if (!title) {
+    if (!title.trim()) {
       handleCancel();
 
       return;
