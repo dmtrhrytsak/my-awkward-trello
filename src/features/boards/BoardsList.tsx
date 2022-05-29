@@ -10,14 +10,14 @@ const BoardsList: React.FC = () => {
   const { isAddMode, handleEnterAddMode, handleExitAddMode } = useAddMode();
 
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="overflow-x-auto flex gap-2">
       {boards.map((board) => (
         <BoardItem key={board.title} board={board} />
       ))}
 
       {!isAddMode && (
         <button
-          className="self-start w-72 p-3 rounded-sm bg-sky-500 hover:bg-sky-400 text-white text-sm transition ease-in-out duration-300"
+          className="self-start flex-shrink-0 flex-grow-0 w-72 p-3 rounded-sm bg-sky-500 hover:bg-sky-400 text-white text-sm transition ease-in-out duration-300"
           onClick={handleEnterAddMode}
         >
           + Add another list

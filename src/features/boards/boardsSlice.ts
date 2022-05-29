@@ -11,16 +11,20 @@ const initialState: BoardsState = [
     id: 'board-default-1',
     title: 'Doing',
     items: [
-      { id: 'item-default-1', title: 'Shopping' },
-      { id: 'item-default-2', title: 'Cooking' },
+      { id: 'item-default-1', title: 'Work my ass off' },
+      { id: 'item-default-2', title: 'Cook a dish' },
+      { id: 'item-default-3', title: 'Ripping my hair out' },
     ],
   },
   {
     id: 'board-default-2',
     title: 'Done',
     items: [
-      { id: 'item-default-11', title: 'Fishing' },
-      { id: 'item-default-21', title: 'Murdering' },
+      { id: 'item-default-11', title: 'Workout' },
+      {
+        id: 'item-default-21',
+        title: 'Send my awful trello to Yuriy for a review',
+      },
     ],
   },
 ];

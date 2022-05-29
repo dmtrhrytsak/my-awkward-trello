@@ -14,7 +14,7 @@ const BoardItem: React.FC<ListItemProps> = ({ board }) => {
   const { isAddMode, handleEnterAddMode, handleExitAddMode } = useAddMode();
 
   return (
-    <article className="self-start w-72 p-3 rounded-sm bg-gray-200">
+    <article className="self-start flex-grow-0 flex-shrink-0 w-72 p-3 rounded-sm bg-gray-200">
       <h2 className="mb-2 text-sm font-semibold">{board.title}</h2>
 
       <div className="mb-2">
@@ -27,7 +27,7 @@ const BoardItem: React.FC<ListItemProps> = ({ board }) => {
         <Button
           variant="secondary"
           size="small"
-          className="flex items-center "
+          className="flex items-center"
           onClick={handleEnterAddMode}
         >
           <HiPlus className="mr-1" />

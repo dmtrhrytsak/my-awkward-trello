@@ -45,7 +45,7 @@ const AddBoard: React.FC<AddBoardProps> = ({ onCancel }) => {
   };
 
   return (
-    <article className="self-start w-72 p-3 rounded-sm bg-gray-200">
+    <article className="self-start flex-shrink-0 flex-grow-0 w-72 p-3 rounded-sm bg-gray-200">
       <input
         type="text"
         value={boardTitle}
