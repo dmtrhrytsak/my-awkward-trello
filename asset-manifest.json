@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/my-awkward-trello/static/css/main.d332d4cc.css",
-    "main.js": "/my-awkward-trello/static/js/main.99f8eb4c.js",
+    "main.css": "/my-awkward-trello/static/css/main.65be916a.css",
+    "main.js": "/my-awkward-trello/static/js/main.c6b6679e.js",
     "index.html": "/my-awkward-trello/index.html",
-    "main.d332d4cc.css.map": "/my-awkward-trello/static/css/main.d332d4cc.css.map",
-    "main.99f8eb4c.js.map": "/my-awkward-trello/static/js/main.99f8eb4c.js.map"
+    "main.65be916a.css.map": "/my-awkward-trello/static/css/main.65be916a.css.map",
+    "main.c6b6679e.js.map": "/my-awkward-trello/static/js/main.c6b6679e.js.map"
   },
   "entrypoints": [
-    "static/css/main.d332d4cc.css",
-    "static/js/main.99f8eb4c.js"
+    "static/css/main.65be916a.css",
+    "static/js/main.c6b6679e.js"
   ]
 }
