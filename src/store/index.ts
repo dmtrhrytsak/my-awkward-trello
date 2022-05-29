@@ -1,10 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import boardsReducer from '../features/boards/boardsSlice';
+import { undoableBoardsReducer } from '../features/boards/boardsSlice';
 
 const store = configureStore({
   reducer: {
-    boards: boardsReducer,
+    //@ts-ignore
+    boards: undoableBoardsReducer,
   },
 });
 

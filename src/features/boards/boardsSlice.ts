@@ -1,10 +1,11 @@
 import { createSlice, nanoid, PayloadAction } from '@reduxjs/toolkit';
 
 import type { RootState } from '../../store';
+import { undoable } from '../../store/enhancers/undoableEnhancer';
 import type { Board } from '../../types/Board';
 import type { Card } from '../../types/Card';
 
-type BoardsState = Board[];
+export type BoardsState = Board[];
 
 const initialState: BoardsState = [
   {
@@ -152,6 +153,8 @@ const boardsSlice = createSlice({
 export const { addCard, addBoard, updateCard, deleteCard, swapCards } =
   boardsSlice.actions;
 
-export const selectAllBoards = (state: RootState) => state.boards;
+export const selectAllBoards = (state: RootState) => state.boards.present;
+
+export const undoableBoardsReducer = undoable<BoardsState>(boardsSlice.reducer);
 
 export default boardsSlice.reducer;
